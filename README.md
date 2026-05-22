@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QUASAR Designer Studio | Premium Bridal Blouses & Luxury Aari Embroidery
 
-## Getting Started
+Welcome to the digital boutique platform of **QUASAR Designer Studio**, Ernakulam’s premier destination for custom, heirloom-quality bridal blouses, Kasavu borders, and royal Zardozi handcraft embroidery.
 
-First, run the development server:
+This project is a high-end, responsive Next.js application designed to showcase custom bridal sketches, catalog artisan handcraft standards, display custom commission collections, and process bespoke 1-on-1 designer inquiries.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features & Architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Modern Stack:** [Next.js](https://nextjs.org/) (App Router), React 19, TypeScript, Tailwind CSS, and Framer Motion.
+* **Premium Brand Aesthetic:** Tailored luxury HSL color system centered around deep royal Maroon (`#7A1F3D`), rich Gold (`#C9A45C`), and pristine Ivory (`#FAF6F0`).
+* **Artisan Crafts Pillars:** Modernized high-contrast vector outline SVGs showcasing traditional hook needles, seed pearl anchors, and handloom weaving.
+* **Interactive 2x2 FAQ Grid:** Clickable, high-fidelity responsive dropdown grid with smooth height animations and rotating chevrons.
+* **Bespoke Consultation Funnel:** Integrated customer occasion and dream motif form input flow.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Local Development
 
-To learn more about Next.js, take a look at the following resources:
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Start the Dev Server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Production Build Compilation:**
+   ```bash
+   npm run build
+   ```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔒 License & Copyright
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Proprietary / All Rights Reserved**
+
+Copyright (c) 2026 QUASAR Designer Studio.
+
+This software, its design layouts, custom vector art, brand styling, photography, and text content are completely proprietary. Under no circumstances may this codebase be cloned, redistributed, or modified for competing commercial purposes without explicit written consent from the founders of **QUASAR Designer Studio**.
