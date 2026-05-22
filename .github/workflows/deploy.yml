@@ -34,7 +34,7 @@ jobs:
       - name: Build (static export)
         env:
           # Replace "ambani" with your actual GitHub repo name
-          NEXT_PUBLIC_BASE_PATH: /ambani
+          NEXT_PUBLIC_BASE_PATH: /ambaniproject
         run: npm run build
 
       - name: Upload artifact
