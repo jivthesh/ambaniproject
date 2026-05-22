@@ -3,90 +3,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
+import { img } from "@/lib/basePath";
 
 const categories = ["All", "Bridal", "Traditional", "Designer", "Custom"];
 
 const portfolioItems = [
-  {
-    id: 1,
-    title: "Royal Peacock Magenta Blouse",
-    category: "Bridal",
-    hours: "180 Hours",
-    difficulty: "High Complexity",
-    image: "/blouse-magenta.jpg",
-    height: "h-96",
-    description: "Our flagship heavy bridal blouse featuring traditional peacock motifs and delicate floral nets in complete gold Aari hand embroidery, embellished with tiny crimson beads and pearl tassels.",
-  },
-  {
-    id: 2,
-    title: "Temple Border Antique Gold",
-    category: "Traditional",
-    hours: "110 Hours",
-    difficulty: "Heritage Classic",
-    image: "/blouse-gold.jpg",
-    height: "h-80",
-    description: "A traditional Kerala-style bridal blouse framing pure temple design motifs in thick antique gold metallic zari threads over gold raw silk fabric, finished with red pearl beads.",
-  },
-  {
-    id: 3,
-    title: "Zardozi Crimson Bridal Sleeve",
-    category: "Bridal",
-    hours: "200 Hours",
-    difficulty: "Masterwork",
-    image: "/blouse-red-bridal.png",
-    height: "h-[28rem]",
-    description: "Stunning sleeve detail showing heavy royal gold Zardozi, clustering seed pearls along the scallop borders, and a beautiful checkerboard pattern filled with micro-crystals.",
-  },
-  {
-    id: 4,
-    title: "Seed Pearl Emerald Neckline",
-    category: "Designer",
-    hours: "130 Hours",
-    difficulty: "Exquisite Detail",
-    image: "/blouse-emerald-detail.png",
-    height: "h-80",
-    description: "A deep emerald green silk blouse featuring premium neck borders with tiny seed pearls, golden bullion thread outlines, and custom beads forming a royal traditional necklace layout.",
-  },
-  {
-    id: 5,
-    title: "Zari Vine Crafting Process",
-    category: "Custom",
-    hours: "Heritage Process",
-    difficulty: "Live Studio",
-    image: "/embroidery-hoop.png",
-    height: "h-96",
-    description: "A peek into our live artisan studio showing a custom traditional floral gold Zari border being stitched tightly over a traditional wooden embroidery hoop on off-white raw silk.",
-  },
-  {
-    id: 6,
-    title: "Classic Paisley Magenta Sleeve",
-    category: "Traditional",
-    hours: "90 Hours",
-    difficulty: "Bespoke Classic",
-    image: "/blouse-magenta.jpg",
-    height: "h-80",
-    description: "A traditional sleeve variation of our Royal Magenta design, centering a large royal paisley hand-embroidered with gold thread and dark ruby red accents.",
-  },
-  {
-    id: 7,
-    title: "Kasavu Gold Floral Blouse",
-    category: "Traditional",
-    hours: "120 Hours",
-    difficulty: "Kerala Bridal",
-    image: "/blouse-gold.jpg",
-    height: "h-[26rem]",
-    description: "Designed specifically to complement traditional Kerala Kasavu sarees, blending rich cream silk backdrops with heavy floral gold Zari work and custom bead borders.",
-  },
-  {
-    id: 8,
-    title: "Leaf Zardozi Emerald Sleeve",
-    category: "Designer",
-    hours: "140 Hours",
-    difficulty: "Exquisite Detail",
-    image: "/blouse-emerald-detail.png",
-    height: "h-96",
-    description: "A sleeve variant matching the seed pearl neckline, emphasizing continuous leaf motifs and layered bead borders for high-end boutique elegance.",
-  },
+  { id: 1, title: "Royal Peacock Magenta Blouse", category: "Bridal", hours: "180 Hours", difficulty: "High Complexity", image: img("/blouse-magenta.jpg"), height: "h-96", description: "Our flagship heavy bridal blouse featuring traditional peacock motifs and delicate floral nets in complete gold Aari hand embroidery, embellished with tiny crimson beads and pearl tassels." },
+  { id: 2, title: "Temple Border Antique Gold", category: "Traditional", hours: "110 Hours", difficulty: "Heritage Classic", image: img("/blouse-gold.jpg"), height: "h-80", description: "A traditional Kerala-style bridal blouse framing pure temple design motifs in thick antique gold metallic zari threads over gold raw silk fabric, finished with red pearl beads." },
+  { id: 3, title: "Zardozi Crimson Bridal Sleeve", category: "Bridal", hours: "200 Hours", difficulty: "Masterwork", image: img("/blouse-red-bridal.png"), height: "h-[28rem]", description: "Stunning sleeve detail showing heavy royal gold Zardozi, clustering seed pearls along the scallop borders, and a beautiful checkerboard pattern filled with micro-crystals." },
+  { id: 4, title: "Seed Pearl Emerald Neckline", category: "Designer", hours: "130 Hours", difficulty: "Exquisite Detail", image: img("/blouse-emerald-detail.png"), height: "h-80", description: "A deep emerald green silk blouse featuring premium neck borders with tiny seed pearls, golden bullion thread outlines, and custom beads forming a royal traditional necklace layout." },
+  { id: 5, title: "Zari Vine Crafting Process", category: "Custom", hours: "Heritage Process", difficulty: "Live Studio", image: img("/embroidery-hoop.png"), height: "h-96", description: "A peek into our live artisan studio showing a custom traditional floral gold Zari border being stitched tightly over a traditional wooden embroidery hoop on off-white raw silk." },
+  { id: 6, title: "Classic Paisley Magenta Sleeve", category: "Traditional", hours: "90 Hours", difficulty: "Bespoke Classic", image: img("/blouse-magenta.jpg"), height: "h-80", description: "A traditional sleeve variation of our Royal Magenta design, centering a large royal paisley hand-embroidered with gold thread and dark ruby red accents." },
+  { id: 7, title: "Kasavu Gold Floral Blouse", category: "Traditional", hours: "120 Hours", difficulty: "Kerala Bridal", image: img("/blouse-gold.jpg"), height: "h-[26rem]", description: "Designed specifically to complement traditional Kerala Kasavu sarees, blending rich cream silk backdrops with heavy floral gold Zari work and custom bead borders." },
+  { id: 8, title: "Leaf Zardozi Emerald Sleeve", category: "Designer", hours: "140 Hours", difficulty: "Exquisite Detail", image: img("/blouse-emerald-detail.png"), height: "h-96", description: "A sleeve variant matching the seed pearl neckline, emphasizing continuous leaf motifs and layered bead borders for high-end boutique elegance." },
 ];
 
 export default function PortfolioPage() {

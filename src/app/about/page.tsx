@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
+import { img } from "@/lib/basePath";
 
 const timelineEvents = [
   {
@@ -125,7 +126,7 @@ export default function AboutPage() {
                 <div className="absolute -inset-2 border border-gold/20 rounded-2xl animate-pulse" />
                 <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl relative">
                   <img
-                    src="/embroidery-hoop.png"
+                    src={img("/embroidery-hoop.png")}
                     alt="Artisan Aari Needle Embroidery Work at QUASAR"
                     className="w-full h-full object-cover"
                   />

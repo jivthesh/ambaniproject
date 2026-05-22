@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { img } from "@/lib/basePath";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import {
@@ -272,7 +273,7 @@ export default function HomePage() {
                 {/* The main masterpiece photo */}
                 <div className="relative w-full h-full overflow-hidden rounded-[24px] md:rounded-[40px]">
                   <img
-                    src="/blouse-magenta.jpg"
+                    src={img("/blouse-magenta.jpg")}
                     alt="QUASAR Royal Magenta Aari Embroidery"
                     className="w-full h-full object-cover"
                   />
@@ -351,7 +352,7 @@ export default function HomePage() {
                 {/* Inner Image Mask */}
                 <div className="relative w-full h-full rounded-t-[210px] rounded-b-[24px] overflow-hidden bg-[#FAF6F0]">
                   <img
-                    src="/blouse-gold.jpg"
+                    src={img("/blouse-gold.jpg")}
                     alt="Intricate Gold Bridal Blouse"
                     className="w-full h-[78%] object-cover"
                   />
@@ -614,7 +615,7 @@ export default function HomePage() {
       {/* Why Choose Us */}
       <section
         className="relative pt-20 pb-36 md:pt-28 md:pb-48 overflow-hidden"
-        style={{ backgroundImage: "url('/bg4.png')", backgroundSize: 'cover', backgroundPosition: 'center bottom', backgroundRepeat: 'no-repeat' }}
+        style={{ backgroundImage: `url(${img('/bg4.png')})`, backgroundSize: 'cover', backgroundPosition: 'center bottom', backgroundRepeat: 'no-repeat' }}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -699,7 +700,7 @@ export default function HomePage() {
       {/* Gallery Section */}
       <section
         className="py-8 md:py-10 lg:py-12 relative overflow-hidden bg-[#7a1f3b]"
-        style={{ backgroundImage: "url('/bg7.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+        style={{ backgroundImage: `url(${img('/bg7.png')})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative">
 
@@ -731,7 +732,7 @@ export default function HomePage() {
                   className="group block relative w-full aspect-[2.1/1] sm:aspect-[2.4/1] lg:aspect-[2.5/1] rounded-[24px] overflow-hidden border border-[#C9A45C]/15 shadow-md bg-transparent"
                 >
                   <img
-                    src="/blouse-magenta.jpg"
+                    src={img("/blouse-magenta.jpg")}
                     alt="Royal Magenta Masterpiece"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -764,7 +765,7 @@ export default function HomePage() {
                     className="group block relative w-full aspect-[1.45/1] sm:aspect-[1.35/1] lg:aspect-[1.55/1] rounded-[24px] overflow-hidden border border-[#C9A45C]/15 shadow-md bg-transparent"
                   >
                     <img
-                      src="/blouse-red-bridal.png"
+                      src={img("/blouse-red-bridal.png")}
                       alt="Zardosi Red Bridal Sleeve"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -795,7 +796,7 @@ export default function HomePage() {
                     className="group block relative w-full aspect-[1.45/1] sm:aspect-[1.35/1] lg:aspect-[1.55/1] rounded-[24px] overflow-hidden border border-[#C9A45C]/15 shadow-md bg-transparent"
                   >
                     <img
-                      src="/embroidery-hoop.png"
+                      src={img("/embroidery-hoop.png")}
                       alt="Zari Floral Hoop Work"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -830,7 +831,7 @@ export default function HomePage() {
                   className="group block relative w-full aspect-[1.85/1] sm:aspect-[1.65/1] lg:aspect-[1.65/1] rounded-[24px] overflow-hidden border border-[#C9A45C]/15 shadow-md bg-transparent"
                 >
                   <img
-                    src="/blouse-gold.jpg"
+                    src={img("/blouse-gold.jpg")}
                     alt="Vintage Gold Heritage Silk"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -861,7 +862,7 @@ export default function HomePage() {
                   className="group block relative w-full aspect-[1.45/1] sm:aspect-[1.35/1] lg:aspect-[0.92/1] lg:flex-grow rounded-[24px] overflow-hidden border border-[#C9A45C]/15 shadow-md bg-transparent"
                 >
                   <img
-                    src="/blouse-emerald-detail.png"
+                    src={img("/blouse-emerald-detail.png")}
                     alt="Neckline Pearl Detail Work"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
