@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
-import { IconNeedleThread, IconThreadSpool } from "@/components/SpecialtyIcons";
 
 const timelineEvents = [
   {
@@ -110,7 +109,7 @@ export default function AboutPage() {
               About QUASAR Studio
             </h1>
             <p className="font-body text-ivory/70 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-              We believe in creating high-end, slow-crafted bridal fashion that honors Kerala's rich artisanal heritage and luxury standards.
+              We believe in creating high-end, slow-crafted bridal fashion that honors Kerala&apos;s rich artisanal heritage and luxury standards.
             </p>
           </motion.div>
         </div>

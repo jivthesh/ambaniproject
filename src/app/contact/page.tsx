@@ -106,7 +106,7 @@ export default function ContactPage() {
                     Studio Address
                   </p>
                   <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-maroon font-bold leading-tight">
-                    Let's Connect
+                    Let&apos;s Connect
                   </h2>
                   <div className="gold-line max-w-24" />
                 </div>
